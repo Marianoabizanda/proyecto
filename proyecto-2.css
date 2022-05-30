@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: rgb(150, 47, 182);
+    background-image: url(./images/ladrillo.jpeg);
 }
 
 
@@ -103,15 +103,21 @@ a {
   flex-wrap: wrap;
   gap: 10px 10px;
   justify-content: space-around;
+  height: 800px;
+  margin-top: 30px;
 }
 
 
 
 .aside { 
   grid-area: aside; 
-  border: 2px solid black;
+  border: 3px solid black;
   padding: 10px 10px;
+  height: 780px;
+  margin-top: 30px;
 }
+
+
 
 
 .map { 
@@ -125,7 +131,6 @@ a {
 
     display: flex;
     justify-content: center;
-    padding: 20px;
     font-size: 20px;
 }
 
@@ -136,6 +141,43 @@ a {
 
 }
 
+.product-image1 {
+    width: 300px;
+    background-image: url(./images/Cervezas.jpeg);
+    background-repeat: no-repeat;
+    display: flex;
+    
+}
+
+.product-image2 {
+    width: 300px;
+    background-image: url(./images/vinos.jpeg);
+    background-repeat: no-repeat;
+}
+
+.product-image3 {
+    width: 300px;
+    background-image: url(./images/whiskys.jpg);
+    background-repeat: no-repeat;
+}
+
+.product-image4 {
+    width: 300px;
+    background-image: url(./images/tragos.jpg);
+    background-repeat: no-repeat;
+}
+
+.product-image5 {
+    width: 300px;
+    background-image: url(./images/sin-alcohol.jpeg);
+    background-repeat: no-repeat;
+}
+
+.product-image6 {
+    width: 300px;
+    background-image: url(./images/bebidas\ espirituosas.jpg);
+    background-repeat: no-repeat;
+}
 
 
 
