@@ -124,6 +124,16 @@ a {
   padding: 10px 10px;
   height: 780px;
   margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.aside,.image-red {
+    
+   display: flex;
+   justify-content: center; 
+  
 }
 
 
@@ -133,7 +143,7 @@ a {
     grid-area: map; 
     padding: 50px 50px;
     cursor: pointer;
-  }
+}
 
   
 .title-map {
@@ -147,8 +157,10 @@ a {
 .iframe {
     width: 100%;
     margin-top: 20px;
-
 }
+
+
+
 
 .product-image1 {
     width: 300px;
@@ -252,9 +264,16 @@ a {
    
 }
 
+/* Fin del footer */
 
 
-/* Seccion Productos */
+
+
+
+
+
+
+/*HTML Seccion Productos */
 
 
 
