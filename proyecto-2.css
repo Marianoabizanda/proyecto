@@ -188,40 +188,45 @@ a {
 
 .product-image1 {
     width: 300px;
+    cursor:pointer;
     background-image: url(./images/Cervezas.jpeg);
     background-repeat: no-repeat;
     display: flex;
-    transition: all 2s;
+    transition: all 0.5s;
     
 }
 
 .product-image2 {
     width: 300px;
+    cursor:pointer;
     background-image: url(./images/vinos.jpeg);
     background-repeat: no-repeat;
-    transition: all 2s;
+    transition: all 0.5s;
 }
 
 .product-image3 {
     width: 300px;
+    cursor:pointer;
     background-image: url(./images/whiskys.jpg);
     background-repeat: no-repeat;
-    transition: all 2s;
+    transition: all 0.5s;
 }
 
 .product-image4 {
     width: 300px;
+    cursor:pointer;
     background-image: url(./images/tragos.jpg);
     background-repeat: no-repeat;
-    transition: all 2s;
+    transition: all 0.5s;
 }
 
 
 .product-image5 {
     width: 300px;
+    cursor:pointer;
     background-image: url(./images/bebidas\ espirituosas.jpg);
     background-repeat: no-repeat;
-    transition: all 2s;
+    transition: all 0.5s;
 }
 
 
@@ -333,22 +338,17 @@ a {
 }
 
 .contenedor-card {
-    border: 2px solid black;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
 }
 
-.title-cervezas {
-    
-    color: rgb(0, 0, 0);
-    
-}
 
 
-
-.card, .image1, img {
+.card, img {
 
     width: 240px;
+    cursor: pointer;
 }
 
