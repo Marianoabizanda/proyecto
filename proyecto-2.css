@@ -20,10 +20,8 @@ body {
 
 .header-nav {
     font-family: sans-serif;
-    height: 50px;
     background-color: rgb(36, 30, 30);
     color: grey;
-    font-size: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -74,12 +72,22 @@ body {
 
 
 
-.nav-container {
+/* .nav-container {
     background-color: rgb(36, 30, 30) ;
     padding: 10px;
     display: flex;
     justify-content: space-around;
     
+} */
+
+
+.container-fluid {
+    background-color: blueviolet;
+    
+}
+
+#navbarNav {
+    justify-content: space-around;
 }
 
 
@@ -187,7 +195,8 @@ a {
 
 
 .product-image1 {
-    width: 300px;
+    border: 1px solid black;
+    height: 185px;
     cursor:pointer;
     background-image: url(./images/Cervezas.jpeg);
     background-repeat: no-repeat;
@@ -197,7 +206,8 @@ a {
 }
 
 .product-image2 {
-    width: 300px;
+    border: 1px solid black;
+    height: 185px;
     cursor:pointer;
     background-image: url(./images/vinos.jpeg);
     background-repeat: no-repeat;
@@ -205,7 +215,8 @@ a {
 }
 
 .product-image3 {
-    width: 300px;
+    border: 1px solid black;
+    height: 185px;
     cursor:pointer;
     background-image: url(./images/whiskys.jpg);
     background-repeat: no-repeat;
@@ -213,7 +224,8 @@ a {
 }
 
 .product-image4 {
-    width: 300px;
+    border: 1px solid black;
+    height: 185px;
     cursor:pointer;
     background-image: url(./images/tragos.jpg);
     background-repeat: no-repeat;
@@ -222,7 +234,8 @@ a {
 
 
 .product-image5 {
-    width: 300px;
+    border: 1px solid black;
+    height: 185px;
     cursor:pointer;
     background-image: url(./images/bebidas\ espirituosas.jpg);
     background-repeat: no-repeat;

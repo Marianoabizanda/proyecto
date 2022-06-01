@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Elemento input (type=search)</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="Diego Ponce de León">
+    <meta name="description" content="Colección de tutoriales y referencia de HTML5. Simple, completa, accesible, fácil de navegar y gratuita.">
+    <meta name="Keywords" content="HTML5, tutoriales, referencia, tags, gratis, aprender">
+    <link rel="stylesheet" type="text/css" href="Elemento%20input%20(type=search)_files/default.css">
+  </head>
+  <!--[if lt IE 7 ]> <body class="ie6"> <![endif]-->
+  <!--[if IE 7 ]>    <body class="ie7"> <![endif]-->
+  <!--[if IE 8 ]>    <body class="ie8"> <![endif]-->
+  <!--[if IE 9 ]>    <body class="ie9"> <![endif]-->
+  <!--[if (gt IE 9)]><body class="modern"> <![endif]-->
+  <!--[!(IE)]><!-->
+    <body class="notIE modern">
+  <!--<![endif]-->
+    <div id="document">
+      <header>
+        <div id="header-sm"><div></div></div>
+        <nav id="main-menu" class="unselectable">
+          <div id="small-main-menu-button">Ξ</div>
+          <ul id="main-menu-list">
+            
+<li><a href="https://www.htmlquick.com/es/">INICIO</a></li><li><a href="https://www.htmlquick.com/es/tutorials.html">TUTORIALES</a></li><li><a href="https://www.htmlquick.com/es/reference.html">REFERENCIA</a></li><li id="main-menu-elements" class="selected"><a href="https://www.htmlquick.com/es/reference/tags.html">ELEMENTOS</a></li>
+          </ul>
+        </nav>
+        <div id="animation">
+          <div id="animation-background-container">
+            <div id="animation-background"></div>
+            <div class="pics">
+              <div id="animation-planet"></div>
+            </div>
+            <div id="animation-planet-and-light-ray-container" class=" animate">
+              <div id="animation-planet-and-light-ray-group" class="pics animate">
+                <div id="animation-light-ray-left"></div>
+                <div id="animation-planet-lit"></div>
+                <div id="animation-light-ray"></div>
+              </div>
+            </div>
+            <div id="animation-arrow-container">
+              <div id="animation-arrow" class=" animate"></div>
+            </div>
+          </div>
+          <div class="picr">
+            <div id="animation-star-shine" class=" animate">
+              <div id="animation-thin-star-shine" class=" animate"></div>
+              <div id="animation-thick-star-shine" class=" animate"></div>
+            </div>
+          </div>
+        </div>
+        <div id="animation-separator"></div>
+        <nav id="header-sub-bar">
+          <a id="change-language" class="en" href="https://www.htmlquick.com/reference/tags/input-search.html" rel="alternate" hreflang="en" title="Switch to english version"><span></span></a>
+          <div id="breadcrum">
+
+<a href="https://www.htmlquick.com/es/">Inicio</a>
+ › <a href="https://www.htmlquick.com/es/reference.html">Referencia</a>
+ › <a href="https://www.htmlquick.com/es/reference/tags.html">Elementos</a>
+ › Elemento input (type=search)
+
+          </div>
+        </nav>
+      </header>
+      <main id="content">
+<article>
+  <header>
+    <h1>Elemento input (<span class="typ">type=search</span>)</h1>
+    <p class="alert"><span class="image"></span>Si no sabes lo que es un elemento o cómo debes usarlo, te recomiendo leer el <a href="https://www.htmlquick.com/tutorials/tags-attributes.html">tutorial "Tags y atributos en <abbr title="Lenguaje de marcas de hypertexto">HTML</abbr>"</a> que puedes encontrar en la sección de <a href="https://www.htmlquick.com/tutorials.html">tutoriales <abbr title="Lenguaje de marcas de hypertexto">HTML</abbr></a>.</p>
+    <div class="table-of-contents">
+      <p>Tabla de contenidos</p>
+      <ul>
+        <li><a class="toc-main-link" href="#description"><span class="toc-number">01</span><span class="toc-title">Descripción</span></a></li>
+        <li><a class="toc-main-link" href="#examples"><span class="toc-number">02</span><span class="toc-title">Ejemplos</span></a></li>
+        <li><a class="toc-main-link" href="#attributes"><span class="toc-number">03</span><span class="toc-title">Atributos</span></a>
+          <ul class="toc-list-level-2">
+            <li><a href="#specific-attributes">Atributos específicos</a></li>
+            <li><a href="#global-attributes">Atributos globales</a></li>
+          </ul>
+        </li>
+        <li><a class="toc-main-link" href="#events"><span class="toc-number">04</span><span class="toc-title">Eventos</span></a>
+          <ul class="toc-list-level-2">
+            <li><a href="#global-events">Eventos globales</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <section id="description">
+    <h2>Descripción</h2>
+    <p>El elemento <code class="element">input</code>, teniendo el valor "search" en su atributo <code class="attribute">type</code>,
+ representa un campo de texto de una sola línea para propósitos de 
+búsqueda. El control asociado a este campo es una caja de texto que 
+permite a los usuarios editar una sola línea de texto regular. Los 
+controles de búsqueda son útiles para recopilar líneas cortas de texto 
+que los agentes procesadores o programas del lado cliente usarán como 
+parámetros para conducir operaciones de búsqueda.</p>
+    <p>Un <a href="https://www.htmlquick.com/es/reference/tags/input-text.html">campo de texto</a>
+ regular y un campo de búsqueda son muy similares. La diferencia entre 
+ellos es principalemente estilística: los navegadores pueden representar
+ sus controles de manera diferente, de acuerdo a su propósito.</p>
+    <p class="info message-right"><span class="image"></span>El contenido del atributo <code class="attribute">value</code>
+ en este elemento representa al valor incial del control. Este valor es 
+el que será mostrado cuando el documento es cargado y cuando un <a href="https://www.htmlquick.com/es/reference/tags/input-reset.html">botón de reinicio</a> es presionado en el formulario.</p>
+  </section>
+  <section id="examples">
+    <h2>Ejemplos</h2>
+    <p>En nuestro primer ejemplo recrearemos un formulario de búsqueda básico. En la entrada de búsqueda, haremos uso del atributo <code class="attribute">placeholder</code>, el cual ha sido introducido en <abbr title="Lenguaje de marcas de hipertexto">HTML</abbr>5.
+ Este atributo nos permite dar una pista acerca de la información que se
+ espera sea provista en el control, como ejemplos o descripciones 
+cortas. Esta pista será mostrada dentro del control (como si fuera el 
+valor) sólo cuando el control no tenga un valor real. Cuando el usuario 
+comience a tipear, el texto de <code class="attribute">placeholder</code> será removido del control.</p>
+
+<pre class="code-view"><code><span class="line"><span class="number" data-num="1."></span><span class="line-1"><span class="tag">&lt;form<span class="atn"> action=</span><span class="atv">"../../form-result.php"</span><span class="atn"> method=</span><span class="atv">"post"</span><span class="atn"> target=</span><span class="atv">"_blank"</span>&gt;</span></span></span>
+<span class="line"><span class="number" data-num="2."></span><span class="line-2">  <span class="tag">&lt;p&gt;</span></span></span>
+<span class="line"><span class="number" data-num="3."></span><span class="line-1">    Búsqueda de música: <span class="tag">&lt;input<span class="atn"> type=</span><span class="atv">"search"</span><span class="atn"> name=</span><span class="atv">"busquedamusica"</span><span class="atn"> placeholder=</span><span class="atv">"Canción, autor, álbum..."</span>&gt;</span></span></span>
+<span class="line"><span class="number" data-num="4."></span><span class="line-2">    <span class="tag">&lt;input<span class="atn"> type=</span><span class="atv">"submit"</span><span class="atn"> value=</span><span class="atv">"Buscar"</span>&gt;</span></span></span>
+<span class="line"><span class="number" data-num="5."></span><span class="line-1">  <span class="tag">&lt;/p&gt;</span></span></span>
+<span class="line"><span class="number" data-num="6."></span><span class="line-2"><span class="tag">&lt;/form&gt;</span></span></span>
+</code></pre>
+<div class="code-view">
+  <div class="code-view-lines">
+<form action="../../form-result.php" method="post" target="_blank">
+  <p>
+    Búsqueda de música: <input type="search" name="busquedamusica" placeholder="Canción, autor, álbum...">
+    <input type="submit" value="Buscar">
+  </p>
+</form>
+    <div class="clear-both"></div>
+  </div>
+</div>
+
+    <p>En el segundo ejemplo, usaremos algunos atributos más: <code class="attribute">size</code> para establecer el ancho del control como un número de caracteres visibles y <code class="attribute">maxlength</code> para establecer el número máximo de caracteres que el valor puede tomar.</p>
+    <p class="alert message-right"><span class="image"></span>Los autores no deberían confiar en los atributos <code class="attribute">minlength</code> y <code class="attribute">maxlength</code>.
+ Los usuarios podrían enviar la información del formulario con 
+navegadores que (algunos intencionalmente) no soportan estas 
+características.</p>
+
+<pre class="code-view"><code><span class="line"><span class="number" data-num="1."></span><span class="line-1"><span class="tag">&lt;form<span class="atn"> action=</span><span class="atv">"../../form-result.php"</span><span class="atn"> method=</span><span class="atv">"post"</span><span class="atn"> target=</span><span class="atv">"_blank"</span>&gt;</span></span></span>
+<span class="line"><span class="number" data-num="2."></span><span class="line-2">  <span class="tag">&lt;p&gt;</span></span></span>
+<span class="line"><span class="number" data-num="3."></span><span class="line-1">    Busca un código: <span class="tag">&lt;input<span class="atn"> type=</span><span class="atv">"search"</span><span class="atn"> name=</span><span class="atv">"busquedacodigo"</span><span class="atn"> size=</span><span class="atv">"4"</span><span class="atn"> maxlength=</span><span class="atv">"4"</span>&gt;</span></span></span>
+<span class="line"><span class="number" data-num="4."></span><span class="line-2">    <span class="tag">&lt;input<span class="atn"> type=</span><span class="atv">"submit"</span><span class="atn"> value=</span><span class="atv">"Buscar"</span>&gt;</span></span></span>
+<span class="line"><span class="number" data-num="5."></span><span class="line-1">  <span class="tag">&lt;/p&gt;</span></span></span>
+<span class="line"><span class="number" data-num="6."></span><span class="line-2"><span class="tag">&lt;/form&gt;</span></span></span>
+</code></pre>
+<div class="code-view">
+  <div class="code-view-lines">
+<form action="../../form-result.php" method="post" target="_blank">
+  <p>
+    Busca un código: <input type="search" name="busquedacodigo" size="4" maxlength="4">
+    <input type="submit" value="Buscar">
+  </p>
+</form>
+    <div class="clear-both"></div>
+  </div>
+</div>
+
+    <p>Ahora probemos otro atributo nuevo en <abbr title="Lenguaje de marcas de hipertexto">HTML</abbr>5: <code class="attribute">list</code>. Este atributo enlaza al control con un <a href="https://www.htmlquick.com/es/reference/tags/datalist.html">elemento <code class="element">datalist</code></a> al referenciar su atributo <code class="attribute">id</code>. El <a href="https://www.htmlquick.com/es/reference/tags/datalist.html"><code class="element">datalist</code></a> asociado provee un número de sugerencias que los usuarios pueden elegir para rellenar automáticamente el valor del control.</p>
+    <p class="warning message-right"><span class="image"></span>El soporte provisto por los navegadores para <a href="https://www.htmlquick.com/es/reference/tags/datalist.html"><code class="element">datalist</code></a> es incompleto. Los autores pueden tener que recurrir a programas para proveer esta funcionalidad consistentemente.</p>
+
+<pre class="code-view"><code><span class="line"><span class="number" data-num="1."></span><span class="line-1"><span class="tag">&lt;form<span class="atn"> action=</span><span class="atv">"../../form-result.php"</span><span class="atn"> method=</span><span class="atv">"post"</span><span class="atn"> target=</span><span class="atv">"_blank"</span>&gt;</span></span></span>
+<span class="line"><span class="number" data-num="2."></span><span class="line-2">  <span class="tag">&lt;p&gt;</span></span></span>
+<span class="line"><span class="number" data-num="3."></span><span class="line-1">    Busca entre nuestros modelos: <span class="tag">&lt;input<span class="atn"> type=</span><span class="atv">"search"</span><span class="atn"> name=</span><span class="atv">"busquedamodelos"</span><span class="atn"> list=</span><span class="atv">"listamodelos"</span>&gt;</span></span></span>
+<span class="line"><span class="number" data-num="4."></span><span class="line-2">    <span class="tag">&lt;input<span class="atn"> type=</span><span class="atv">"submit"</span><span class="atn"> value=</span><span class="atv">"Buscar"</span>&gt;</span></span></span>
+<span class="line"><span class="number" data-num="5."></span><span class="line-1">  <span class="tag">&lt;/p&gt;</span></span></span>
+<span class="line"><span class="number" data-num="6."></span><span class="line-2"><span class="tag">&lt;/form&gt;</span></span></span>
+<span class="line"><span class="number" data-num="7."></span><span class="line-1"><span class="tag">&lt;datalist<span class="atn"> id=</span><span class="atv">"listamodelos"</span>&gt;</span></span></span>
+<span class="line"><span class="number" data-num="8."></span><span class="line-2">  <span class="tag">&lt;option<span class="atn"> value=</span><span class="atv">"Camaro"</span>&gt;</span></span></span>
+<span class="line"><span class="number" data-num="9."></span><span class="line-1">  <span class="tag">&lt;option<span class="atn"> value=</span><span class="atv">"Corvette"</span>&gt;</span></span></span>
+<span class="line"><span class="number" data-num="10."></span><span class="line-2">  <span class="tag">&lt;option<span class="atn"> value=</span><span class="atv">"Impala"</span>&gt;</span></span></span>
+<span class="line"><span class="number" data-num="11."></span><span class="line-1">  <span class="tag">&lt;option<span class="atn"> value=</span><span class="atv">"Colorado"</span>&gt;</span></span></span>
+<span class="line"><span class="number" data-num="12."></span><span class="line-2"><span class="tag">&lt;/datalist&gt;</span></span></span>
+</code></pre>
+<div class="code-view">
+  <div class="code-view-lines">
+<form action="../../form-result.php" method="post" target="_blank">
+  <p>
+    Busca entre nuestros modelos: <input type="search" name="busquedamodelos" list="listamodelos">
+    <input type="submit" value="Buscar">
+  </p>
+</form>
+<datalist id="listamodelos">
+  <option value="Camaro">
+  </option><option value="Corvette">
+  </option><option value="Impala">
+  </option><option value="Colorado">
+</option></datalist>
+    <div class="clear-both"></div>
+  </div>
+</div>
+
+    <p>Nuestro ejemplo final combina dos atributos, también nuevos en <abbr title="Lenguaje de marcas de hipertexto">HTML</abbr>5, que habitualmente trabajan juntos. Estos son <code class="attribute">pattern</code> y <code class="attribute">required</code>.
+ Su importancia se vuelve evidente cuando el autor necesita establecer 
+un conjunto de reglas acerca del formato de la información que puede ser
+ ingresada en un control.</p>
+    <p>El atributo <code class="attribute">pattern</code>, ayuda estableciendo expresiones regulares que cualquier valor ingresado debe acatar. Cuando está presente, el atributo <code class="attribute">title</code>
+ toma particular relevancia, ya que es responsable de proveer una 
+explicación acerca de las reglas que aplican en el campo. Los 
+navegadores pueden usar esta información para componer el mensaje de 
+error que se muestra al usuario luego de un intento fallido de envío.</p>
+    <p>Por otra parte, el atributo <code class="attribute">required</code>
+ impide a los usuarios dejar el campo vacío. Ambos atributos, juntos, 
+indican que el control debe ser rellenado y especifican cómo debe ser 
+rellenado.</p>
+    <p class="info message-right"><span class="image"></span>La 
+presencia de estos atributos implica que el envío del formulario será 
+interrumpido hasta que sus requerimientos sean satisfechos. Los 
+navegadores mostrarán mensajes de error cuando el usuario intente enviar
+ campos que no cumplen las premisas.</p>
+    <p class="info message-left"><span class="image"></span>Una 
+expresión regular es una secuencia de caracteres que forman un patrón de
+ búsqueda, principalmente para su uso en correspondencia de patrones y 
+cadenas u operaciones estilo <i>búsqueda y reemplazo</i>.</p>
+    <p class="warning message-right"><span class="image"></span>El soporte provisto por los navegadores para el atributo <code class="attribute">required</code> es incompleto. Los autores pueden tener que recurrir a programas para proveer esta funcionalidad consistentemente.</p>
+
+<pre class="code-view"><code><span class="line"><span class="number" data-num="1."></span><span class="line-1"><span class="tag">&lt;form<span class="atn"> action=</span><span class="atv">"../../form-result.php"</span><span class="atn"> method=</span><span class="atv">"post"</span><span class="atn"> target=</span><span class="atv">"_blank"</span>&gt;</span></span></span>
+<span class="line"><span class="number" data-num="2."></span><span class="line-2">  <span class="tag">&lt;p&gt;</span></span></span>
+<span class="line"><span class="number" data-num="3."></span><span class="line-1">    Buscar por código: <span class="tag">&lt;input<span class="atn"> type=</span><span class="atv">"search"</span><span class="atn"> name=</span><span class="atv">"busquedacodigo"</span><span class="atn"> pattern=</span><span class="atv">"[A-Za-z0-9]{8,20}"</span><span class="atn"> title=</span><span class="atv">"Un código válido consiste en una cadena con 8 a 20 caracteres, cada uno de los cuales es una letra o un dígito"</span><span class="atn"> required&gt;</span></span></span></span>
+<span class="line"><span class="number" data-num="4."></span><span class="line-2">    <span class="tag">&lt;input<span class="atn"> type=</span><span class="atv">"submit"</span><span class="atn"> value=</span><span class="atv">"Buscar"</span>&gt;</span></span></span>
+<span class="line"><span class="number" data-num="5."></span><span class="line-1">  <span class="tag">&lt;/p&gt;</span></span></span>
+<span class="line"><span class="number" data-num="6."></span><span class="line-2"><span class="tag">&lt;/form&gt;</span></span></span>
+</code></pre>
+<div class="code-view">
+  <div class="code-view-lines">
+<form action="../../form-result.php" method="post" target="_blank">
+  <p>
+    Buscar por código: <input type="search" name="busquedacodigo" pattern="[A-Za-z0-9]{8,20}" title="Un código válido consiste en una cadena con 8 a 20 caracteres, cada uno de los cuales es una letra o un dígito" required="">
+    <input type="submit" value="Buscar">
+  </p>
+</form>
+    <div class="clear-both"></div>
+  </div>
+</div>
+
+  </section>
+  <section id="attributes">
+    <h2>Atributos</h2>
+    <section id="specific-attributes">
+      <h3>Atributos específicos</h3>
+      <details class="attribute">
+        <summary>
+          <h4>autofocus</h4>
+        </summary>
+        <p>Un valor booleano que instruye al navegador a establecer el 
+enfoque sobre este control cuando el documento termina de cargarse o 
+cuando el cuadro de diálogo (<a href="https://www.htmlquick.com/es/reference/tags/dialog.html"><code class="element">dialog</code></a>)
+ donde el control se encuentra es mostrado. Si el atributo tiene el 
+valor "autofocus" o la cadena vacía (""), o si simplemente está 
+presente, el control debería obtener el enfoque tan pronto como sea 
+posible, luego de que la página o cuadro de diálogo hayan sido cargados.</p>
+        <p class="code-view-title"><span>Ejemplo</span></p>
+
+<pre class="code-view"><code><span class="line"><span class="number" data-num="1."></span><span class="line-1"><span class="tag">&lt;p&gt;</span><span class="tag">&lt;input<span class="atn"> type=</span><span class="atv">"search"</span><span class="atn"> name=</span><span class="atv">"campobusqueda"</span><span class="atn"> autofocus&gt;</span></span><span class="tag">&lt;/p&gt;</span></span></span>
+</code></pre>
+
+      </details>
+      <details class="attribute">
+        <summary>
+          <h4>dirname</h4>
+        </summary>
+        <p>Un nombre para un nuevo campo especialmente creado con el fin
+ de transmitir la direccionalidad del texto ingresado. Este atributo, 
+nuevo en <abbr title="Lenguaje de marcas de hipertexto">HTML</abbr>5, 
+permite a los autores manipular correctamente los valores enviados con 
+cualquier direccionalidad de texto, al agregar un campo que es enviado 
+con el formulario. El nombre de ese campo será el valor de este 
+atributo.</p>
+        <p class="alert"><span class="image"></span>Siendo relativamente nuevo, el soporte provisto por los navegadores para el atributo <code class="attribute">dirname</code> es incompleto. Los autores deberían revisar el soporte cuando la información es recibida en el servidor.</p>
+        <p class="code-view-title"><span>Ejemplo</span></p>
+
+<pre class="code-view"><code><span class="line"><span class="number" data-num="1."></span><span class="line-1"><span class="tag">&lt;form<span class="atn"> action=</span><span class="atv">"../../form-result.php"</span><span class="atn"> method=</span><span class="atv">"post"</span><span class="atn"> target=</span><span class="atv">"_blank"</span>&gt;</span></span></span>
+<span class="line"><span class="number" data-num="2."></span><span class="line-2">  <span class="tag">&lt;p&gt;</span></span></span>
+<span class="line"><span class="number" data-num="3."></span><span class="line-1">    <span class="tag">&lt;input<span class="atn"> type=</span><span class="atv">"search"</span><span class="atn"> name=</span><span class="atv">"campobusqueda"</span><span class="atn"> dirname=</span><span class="atv">"campobusqueda-dir"</span>&gt;</span></span></span>
+<span class="line"><span class="number" data-num="4."></span><span class="line-2">    <span class="tag">&lt;input<span class="atn"> type=</span><span class="atv">"submit"</span><span class="atn"> value=</span><span class="atv">"Buscar"</span>&gt;</span></span></span>
+<span class="line"><span class="number" data-num="5."></span><span class="line-1">  <span class="tag">&lt;/p&gt;</span></span></span>
+<span class="line"><span class="number" data-num="6."></span><span class="line-2"><span class="tag">&lt;/form&gt;</span></span></span>
+</code></pre>
+<div class="code-view">
+  <div class="code-view-lines">
+<form action="../../form-result.php" method="post" target="_blank">
+  <p>
+    <input type="search" name="campobusqueda" dirname="campobusqueda-dir">
+    <input type="submit" value="Buscar">
+  </p>
+</form>
+    <div class="clear-both"></div>
+  </div>
+</div>
+
+      </details>
+      <details class="attribute">
+        <summary>
+          <h4>disabled</h4>
+        </summary>
+        <p>Un valor booleano que indica si el control se encuentra 
+deshabilitado o no. Si el atributo toma el valor "disabled" o la cadena 
+vacía (""), o si está simplemente presente, el control estará 
+deshabilitado.</p>
+        <p class="info"><span class="image"></span>Los controles 
+deshabilitados son representados en color gris (si son visibles), son 
+impedidos para interactuar con el usuario y, lo más importante, sus 
+valores (si lo tienen) no son enviados cuando el formulario es 
+despachado.</p>
+        <p class="code-view-title"><span>Ejemplo</span></p>
+
+<pre class="code-view"><code><span class="line"><span class="number" data-num="1."></span><span class="line-1"><span class="tag">&lt;form<span class="atn"> action=</span><span class="atv">"../../form-result.php"</span><span class="atn"> method=</span><span class="atv">"post"</span><span class="atn"> target=</span><span class="atv">"_blank"</span>&gt;</span></span></span>
+<span class="line"><span class="number" data-num="2."></span><span class="line-2">  <span class="tag">&lt;p&gt;</span></span></span>
+<span class="line"><span class="number" data-num="3."></span><span class="line-1">    <span class="tag">&lt;input<span class="atn"> type=</span><span class="atv">"search"</span><span class="atn"> name=</span><span class="atv">"campobusqueda"</span><span class="atn"> disabled&gt;</span></span></span></span>
+<span class="line"><span class="number" data-num="4."></span><span class="line-2">    <span class="tag">&lt;input<span class="atn"> type=</span><span class="atv">"submit"</span><span class="atn"> value=</span><span class="atv">"Buscar"</span>&gt;</span></span></span>
+<span class="line"><span class="number" data-num="5."></span><span class="line-1">  <span class="tag">&lt;/p&gt;</span></span></span>
+<span class="line"><span class="number" data-num="6."></span><span class="line-2"><span class="tag">&lt;/form&gt;</span></span></span>
+</code></pre>
+<div class="code-view">
+  <div class="code-view-lines">
+<form action="../../form-result.php" method="post" target="_blank">
+  <p>
+    <input type="search" name="campobusqueda" disabled="disabled">
+    <input type="submit" value="Buscar">
+  </p>
+</form>
+    <div class="clear-both"></div>
+  </div>
+</div>
+
+      </details>
+      <details class="attribute">
+        <summary>
+          <h4>form</h4>
+        </summary>
+        <p>El valor del atributo <code class="attribute">id</code> del formulario con el que este control está asociado.</p>
+        <p class="info"><span class="image"></span>Este atributo es nuevo en <abbr title="Lenguaje de marcas de hipertexto">HTML</abbr>5 y ayuda a definir la pertenencia de los controles en formularios anidados o distantes.</p>
+        <p class="code-view-title"><span>Ejemplo</span></p>
+
+<pre class="code-view"><code><span class="line"><span class="number" data-num="1."></span><span class="line-1"><span class="tag">&lt;p&gt;</span><span class="tag">&lt;input<span class="atn"> type=</span><span class="atv">"search"</span><span class="atn"> name=</span><span class="atv">"campobusqueda"</span><span class="atn"> form=</span><span class="atv">"formulario1"</span>&gt;</span><span class="tag">&lt;/p&gt;</span></span></span>
+<span class="line"><span class="number" data-num="2."></span><span class="line-2"><span class="tag">&lt;form<span class="atn"> id=</span><span class="atv">"formulario1"</span><span class="atn"> action=</span><span class="atv">"../../form-result.php"</span><span class="atn"> method=</span><span class="atv">"post"</span><span class="atn"> target=</span><span class="atv">"_blank"</span>&gt;</span></span></span>
+<span class="line"><span class="number" data-num="3."></span><span class="line-1">  <span class="tag">&lt;p&gt;</span><span class="tag">&lt;input<span class="atn"> type=</span><span class="atv">"submit"</span><span class="atn"> value=</span><span class="atv">"Buscar"</span>&gt;</span><span class="tag">&lt;/p&gt;</span></span></span>
+<span class="line"><span class="number" data-num="4."></span><span class="line-2"><span class="tag">&lt;/form&gt;</span></span></span>
+</code></pre>
+<div class="code-view">
+  <div class="code-view-lines">
+<p><input type="search" name="campobusqueda" form="formulario1"></p>
+<form id="formulario1" action="../../form-result.php" method="post" target="_blank">
+  <p><input type="submit" value="Buscar"></p>
+</form>
+    <div class="clear-both"></div>
+  </div>
+</div>
+
+      </details>
+      <details class="attribute">
+        <summary>
+          <h4>list</h4>
+        </summary>
+        <p>Un identificador que concuerda con el valor del atributo <code class="attribute">id</code> del <a href="https://www.htmlquick.com/es/reference/tags/datalist.html">elemento <code class="element">datalist</code></a> con el que este control está asociado. El <a href="https://www.htmlquick.com/es/reference/tags/datalist.html"><code class="element">datalist</code></a> referenciado por este atributoproveerá un número de sugerencias que los usuarios pueden escoger para autocompletar el control.</p>
+        <p class="warning"><span class="image"></span>El soporte provisto por los navegadores para <a href="https://www.htmlquick.com/es/reference/tags/datalist.html"><code class="element">datalist</code></a> es incompleto. Los autores pueden tener que recurrir a programas para proveer esta funcionalidad consistentemente.</p>
+        <p class="code-view-title"><span>Ejemplo</span></p>
+
+<pre class="code-view"><code><span class="line"><span class="number" data-num="1."></span><span class="line-1"><span class="tag">&lt;form<span class="atn"> action=</span><span class="atv">"../../form-result.php"</span><span class="atn"> method=</span><span class="atv">"post"</span><span class="atn"> target=</span><span class="atv">"_blank"</span>&gt;</span></span></span>
+<span class="line"><span class="number" data-num="2."></span><span class="line-2">  <span class="tag">&lt;p&gt;</span></span></span>
+<span class="line"><span class="number" data-num="3."></span><span class="line-1">    Buscar mascotas: <span class="tag">&lt;input<span class="atn"> type=</span><span class="atv">"search"</span><span class="atn"> name=</span><span class="atv">"campobusqueda"</span><span class="atn"> list=</span><span class="atv">"listamascotas"</span>&gt;</span></span></span>
+<span class="line"><span class="number" data-num="4."></span><span class="line-2">    <span class="tag">&lt;input<span class="atn"> type=</span><span class="atv">"submit"</span><span class="atn"> value=</span><span class="atv">"Search"</span>&gt;</span><span class="tag">&lt;/p&gt;</span></span></span>
+<span class="line"><span class="number" data-num="5."></span><span class="line-1">  <span class="tag">&lt;/p&gt;</span></span></span>
+<span class="line"><span class="number" data-num="6."></span><span class="line-2"><span class="tag">&lt;/form&gt;</span></span></span>
+<span class="line"><span class="number" data-num="7."></span><span class="line-1"><span class="tag">&lt;datalist<span class="atn"> id=</span><span class="atv">"listamascotas"</span>&gt;</span></span></span>
+<span class="line"><span class="number" data-num="8."></span><span class="line-2">  <span class="tag">&lt;option<span class="atn"> value=</span><span class="atv">"Perro"</span>&gt;</span></span></span>
+<span class="line"><span class="number" data-num="9."></span><span class="line-1">  <span class="tag">&lt;option<span class="atn"> value=</span><span class="atv">"Gato"</span>&gt;</span></span></span>
+<span class="line"><span class="number" data-num="10."></span><span class="line-2">  <span class="tag">&lt;option<span class="atn"> value=</span><span class="atv">"Conejo"</span>&gt;</span></span></span>
+<span class="line"><span class="number" data-num="11."></span><span class="line-1">  <span class="tag">&lt;option<span class="atn"> value=</span><span class="atv">"Loro"</span>&gt;</span></span></span>
+<span class="line"><span class="number" data-num="12."></span><span class="line-2"><span class="tag">&lt;/datalist&gt;</span></span></span>
+</code></pre>
+<div class="code-view">
+  <div class="code-view-lines">
+<form action="../../form-result.php" method="post" target="_blank">
+  <p>
+    Buscar mascotas: <input type="search" name="campobusqueda" list="listamascotas">
+    <input type="submit" value="Search"></p>
+  <p></p>
+</form>
+<datalist id="listamascotas">
+  <option value="Perro">
+  </option><option value="Gato">
+  </option><option value="Conejo">
+  </option><option value="Loro">
+</option></datalist>
+    <div class="clear-both"></div>
+  </div>
+</div>
+
+      </details>
+      <details class="attribute">
+        <summary>
+          <h4>maxlength</h4>
+        </summary>
+        <p>Un entero que indica el número máximo de caracteres que el valor de este control puede tener.</p>
+        <p class="alert"><span class="image"></span>Los autores no deberían confiar en el atributo <code class="attribute">maxlength</code>.
+ Los usuarios podrían enviar la información del formulario con 
+navegadores que (algunos intencionalmente) no soportan estas 
+características.</p>
+        <p class="code-view-title"><span>Ejemplo</span></p>
+
+<pre class="code-view"><code><span class="line"><span class="number" data-num="1."></span><span class="line-1"><span class="tag">&lt;form<span class="atn"> action=</span><span class="atv">"../../form-result.php"</span><span class="atn"> method=</span><span class="atv">"post"</span><span class="atn"> target=</span><span class="atv">"_blank"</span>&gt;</span></span></span>
+<span class="line"><span class="number" data-num="2."></span><span class="line-2">  <span class="tag">&lt;p&gt;</span></span></span>
+<span class="line"><span class="number" data-num="3."></span><span class="line-1">    Buscar código: <span class="tag">&lt;input<span class="atn"> type=</span><span class="atv">"search"</span><span class="atn"> name=</span><span class="atv">"buscarcodigo"</span><span class="atn"> maxlength=</span><span class="atv">"2"</span>&gt;</span></span></span>
+<span class="line"><span class="number" data-num="4."></span><span class="line-2">    <span class="tag">&lt;input<span class="atn"> type=</span><span class="atv">"submit"</span><span class="atn"> value=</span><span class="atv">"Buscar"</span>&gt;</span></span></span>
+<span class="line"><span class="number" data-num="5."></span><span class="line-1">  <span class="tag">&lt;/p&gt;</span></span></span>
+<span class="line"><span class="number" data-num="6."></span><span class="line-2"><span class="tag">&lt;/form&gt;</span></span></span>
+</code></pre>
+<div class="code-view">
+  <div class="code-view-lines">
+<form action="../../form-result.php" method="post" target="_blank">
+  <p>
+    Buscar código: <input type="search" name="buscarcodigo" maxlength="2">
+    <input type="submit" value="Buscar">
+  </p>
+</form>
+    <div class="clear-both"></div>
+  </div>
+</div>
+
+      </details>
+      <details class="attribute">
+        <summary>
+          <h4>minlength</h4>
+        </summary>
+        <p>Un entero que indica el número mínimo de caracteres que el valor de este control puede tener.</p>
+        <p class="alert"><span class="image"></span>Los autores no deberían confiar en el atributo <code class="attribute">minlength</code>.
+ Los usuarios podrían enviar la información del formulario con 
+navegadores que (algunos intencionalmente) no soportan estas 
+características.</p>
+        <p class="warning"><span class="image"></span>El soporte provisto por los navegadores para el atributo <code class="attribute">minlength</code> es extremadamente bajo (hasta el 18/12/2014). Los autores no deberían confiar en este atributo hasta que el soporte crezca.</p>
+        <p class="code-view-title"><span>Ejemplo</span></p>
+
+<pre class="code-view"><code><span class="line"><span class="number" data-num="1."></span><span class="line-1"><span class="tag">&lt;form<span class="atn"> action=</span><span class="atv">"../../form-result.php"</span><span class="atn"> method=</span><span class="atv">"post"</span><span class="atn"> target=</span><span class="atv">"_blank"</span>&gt;</span></span></span>
+<span class="line"><span class="number" data-num="2."></span><span class="line-2">  <span class="tag">&lt;p&gt;</span></span></span>
+<span class="line"><span class="number" data-num="3."></span><span class="line-1">    Buscar código: <span class="tag">&lt;input<span class="atn"> type=</span><span class="atv">"search"</span><span class="atn"> name=</span><span class="atv">"buscarcodigo"</span><span class="atn"> minlength=</span><span class="atv">"1"</span>&gt;</span></span></span>
+<span class="line"><span class="number" data-num="4."></span><span class="line-2">    <span class="tag">&lt;input<span class="atn"> type=</span><span class="atv">"submit"</span><span class="atn"> value=</span><span class="atv">"Buscar"</span>&gt;</span></span></span>
+<span class="line"><span class="number" data-num="5."></span><span class="line-1">  <span class="tag">&lt;/p&gt;</span></span></span>
+<span class="line"><span class="number" data-num="6."></span><span class="line-2"><span class="tag">&lt;/form&gt;</span></span></span>
+</code></pre>
+<div class="code-view">
+  <div class="code-view-lines">
+<form action="../../form-result.php" method="post" target="_blank">
+  <p>
+    Buscar código: <input type="search" name="buscarcodigo" minlength="1">
+    <input type="submit" value="Buscar">
+  </p>
+</form>
+    <div class="clear-both"></div>
+  </div>
+</div>
+
+      </details>
+      <details class="attribute">
+        <summary>
+          <h4>name</h4>
+        </summary>
+        <p>Un nombre para el control. Este nombre será enviado por el 
+navegador al agente procesador, emparejado con el contenido del atributo
+ <code class="attribute">value</code>. Ambos atributos juntos conformarán un par nombre-valor que será utilizado para procesar la información del formulario.</p>
+        <p class="warning"><span class="image"></span>Actualmente, el valor <code>isindex</code>, antiguamente utilizado de manera especial por algunos navegadores e incluido en el estándar <abbr title="Lenguaje de marcas de hipertexto">HTML</abbr>, no está permitido en este atributo.</p>
+        <p class="code-view-title"><span>Ejemplo</span></p>
+
+<pre class="code-view"><code><span class="line"><span class="number" data-num="1."></span><span class="line-1"><span class="tag">&lt;form<span class="atn"> action=</span><span class="atv">"../../form-result.php"</span><span class="atn"> method=</span><span class="atv">"post"</span><span class="atn"> target=</span><span class="atv">"_blank"</span>&gt;</span></span></span>
+<span class="line"><span class="number" data-num="2."></span><span class="line-2">  <span class="tag">&lt;p&gt;</span></span></span>
+<span class="line"><span class="number" data-num="3."></span><span class="line-1">    Buscar ciudad: <span class="tag">&lt;input<span class="atn"> type=</span><span class="atv">"search"</span><span class="atn"> name=</span><span class="atv">"buscarciudad"</span>&gt;</span></span></span>
+<span class="line"><span class="number" data-num="4."></span><span class="line-2">    <span class="tag">&lt;input<span class="atn"> type=</span><span class="atv">"submit"</span><span class="atn"> value=</span><span class="atv">"Buscar"</span>&gt;</span></span></span>
+<span class="line"><span class="number" data-num="5."></span><span class="line-1">  <span class="tag">&lt;/p&gt;</span></span></span>
+<span class="line"><span class="number" data-num="6."></span><span class="line-2"><span class="tag">&lt;/form&gt;</span></span></span>
+</code></pre>
+<div class="code-view">
+  <div class="code-view-lines">
+<form action="../../form-result.php" method="post" target="_blank">
+  <p>
+    Buscar ciudad: <input type="search" name="buscarciudad">
+    <input type="submit" value="Buscar">
+  </p>
+</form>
+    <div class="clear-both"></div>
+  </div>
+</div>
+
+      </details>
+      <details class="attribute">
+        <summary>
+          <h4>pattern</h4>
+        </summary>
+        <p>Una expresión regular para comparar con el valor del control 
+antes de que el formulario sea enviado. Este atributo puede ser usado 
+para especificar un formato que los usuarios tendrán que respetar a la 
+hora de completar el campo. Si este patrón no es respetado, un mensaje 
+de error será mostrado durante el envío y el proceso será cancelado (a 
+menos que el atirbuto <code class="attribute">formnovalidate</code> esté presente en el formulario o en el <a href="https://www.htmlquick.com/es/reference/tags/input-submit.html">botón de envío</a>).</p>
+        <p>El atributo <code class="attribute">title</code> toma un 
+significado especial cuando este atributo está presente: se espera que 
+éste provea una explicación acerca de las reglas que aplican en el 
+campo. Los navegadores pueden usar la información de <code class="attribute">title</code> para componer el mensaje de error que es mostrado al usuario cuando el proceso de envío es cancelado.</p>
+        <p class="info"><span class="image"></span>Una expresión regular
+ es una secuencia de caracteres que forman un patrón de búsqueda, 
+principalmente para su uso en correspondencia de patrones y cadenas u 
+operaciones estilo <i>búsqueda y reemplazo</i>.</p>
+        <p class="code-view-title"><span>Ejemplo</span></p>
+
+<pre class="code-view"><code><span class="line"><span class="number" data-num="1."></span><span class="line-1"><span class="tag">&lt;form<span class="atn"> action=</span><span class="atv">"../../form-result.php"</span><span class="atn"> method=</span><span class="atv">"post"</span><span class="atn"> target=</span><span class="atv">"_blank"</span>&gt;</span></span></span>
+<span class="line"><span class="number" data-num="2."></span><span class="line-2">  <span class="tag">&lt;p&gt;</span></span></span>
+<span class="line"><span class="number" data-num="3."></span><span class="line-1">    Buscar por código: <span class="tag">&lt;input<span class="atn"> type=</span><span class="atv">"search"</span><span class="atn"> name=</span><span class="atv">"buscarporcodigo"</span><span class="atn"> pattern=</span><span class="atv">"[A-Z0-9]{4,10}"</span><span class="atn"> title=</span><span class="atv">"Un código válido debe tener entre 4 y 10 caracteres de logitud, donde cada carácter puede ser una letra mayúscula o un dígito"</span>&gt;</span></span></span>
+<span class="line"><span class="number" data-num="4."></span><span class="line-2">    <span class="tag">&lt;input<span class="atn"> type=</span><span class="atv">"submit"</span><span class="atn"> value=</span><span class="atv">"Buscar"</span>&gt;</span></span></span>
+<span class="line"><span class="number" data-num="5."></span><span class="line-1">  <span class="tag">&lt;/p&gt;</span></span></span>
+<span class="line"><span class="number" data-num="6."></span><span class="line-2"><span class="tag">&lt;/form&gt;</span></span></span>
+</code></pre>
+<div class="code-view">
+  <div class="code-view-lines">
+<form action="../../form-result.php" method="post" target="_blank">
+  <p>
+    Buscar por código: <input type="search" name="buscarporcodigo" pattern="[A-Z0-9]{4,10}" title="Un código válido debe tener entre 4 y 10 caracteres de logitud, donde cada carácter puede ser una letra mayúscula o un dígito">
+    <input type="submit" value="Buscar">
+  </p>
+</form>
+    <div class="clear-both"></div>
+  </div>
+</div>
+
+      </details>
+      <details class="attribute">
+        <summary>
+          <h4>placeholder</h4>
+        </summary>
+        <p>Una línea de texto que se supone provee una pista acerca de 
+cómo debería ser rellenado el campo, como ejemplos o descripciones 
+cortas. Los navegadores pueden mostrar los contenidos de este atributo 
+en el control mientras este no tiene un valor. Tan pronto como el 
+usuario comience a escribir su propio texto, el texto <code class="attribute">placeholder</code> debería desaparecer del control.</p>
+        <p class="alert"><span class="image"></span>Los autores no 
+deberían utilizar este atributo para reemplazar a la etiqueta. Las 
+etiquetas están pensdas para proveer un título, mientras que el texto <code class="attribute">placeholder</code> debería dar una pequeña pista acerca de cómo rellenar el campo. Además, es de esperarse el texto <code class="attribute">placeholder</code> desaparezca cuando el usuario comience a escribir en el control.</p>
+        <p class="code-view-title"><span>Ejemplo</span></p>
+
+<pre class="code-view"><code><span class="line"><span class="number" data-num="1."></span><span class="line-1"><span class="tag">&lt;form<span class="atn"> action=</span><span class="atv">"../../form-result.php"</span><span class="atn"> method=</span><span class="atv">"post"</span><span class="atn"> target=</span><span class="atv">"_blank"</span>&gt;</span></span></span>
+<span class="line"><span class="number" data-num="2."></span><span class="line-2">  <span class="tag">&lt;p&gt;</span></span></span>
+<span class="line"><span class="number" data-num="3."></span><span class="line-1">    Busca rpor estado: <span class="tag">&lt;input<span class="atn"> type=</span><span class="atv">"search"</span><span class="atn"> name=</span><span class="atv">"buscarporestado"</span><span class="atn"> placeholder=</span><span class="atv">"Kansas, Arizona, Colorado..."</span>&gt;</span></span></span>
+<span class="line"><span class="number" data-num="4."></span><span class="line-2">    <span class="tag">&lt;input<span class="atn"> type=</span><span class="atv">"submit"</span><span class="atn"> value=</span><span class="atv">"Buscar"</span>&gt;</span></span></span>
+<span class="line"><span class="number" data-num="5."></span><span class="line-1">  <span class="tag">&lt;/p&gt;</span></span></span>
+<span class="line"><span class="number" data-num="6."></span><span class="line-2"><span class="tag">&lt;/form&gt;</span></span></span>
+</code></pre>
+<div class="code-view">
+  <div class="code-view-lines">
+<form action="../../form-result.php" method="post" target="_blank">
+  <p>
+    Busca rpor estado: <input type="search" name="buscarporestado" placeholder="Kansas, Arizona, Colorado...">
+    <input type="submit" value="Buscar">
+  </p>
+</form>
+    <div class="clear-both"></div>
+  </div>
+</div>
+
+      </details>
+      <details class="attribute">
+        <summary>
+          <h4>readonly</h4>
+        </summary>
+        <p>Un valor booleano que instruye al navegador a impedir que el 
+usuario cambie el valor del control. Si este atributo tiene el valor 
+"readonly" o la cadena vacía (""), o si simplemente está presente, el 
+usuario no tendrá premitido hacer cambios al valor en el control.</p>
+        <p class="info"><span class="image"></span>Aunque este atributo 
+previene que el valor del control sea editado, no toda interacción es 
+bloqueada: los usuario aún podrán seleccionar y copiar el texto en el 
+control.</p>
+        <p class="code-view-title"><span>Ejemplo</span></p>
+
+<pre class="code-view"><code><span class="line"><span class="number" data-num="1."></span><span class="line-1"><span class="tag">&lt;form<span class="atn"> action=</span><span class="atv">"../../form-result.php"</span><span class="atn"> method=</span><span class="atv">"post"</span><span class="atn"> target=</span><span class="atv">"_blank"</span>&gt;</span></span></span>
+<span class="line"><span class="number" data-num="2."></span><span class="line-2">  <span class="tag">&lt;p&gt;</span></span></span>
+<span class="line"><span class="number" data-num="3."></span><span class="line-1">    Búsqueda de usuarios: <span class="tag">&lt;input<span class="atn"> type=</span><span class="atv">"search"</span><span class="atn"> name=</span><span class="atv">"busquedausuarios"</span><span class="atn"> value=</span><span class="atv">"samwise4855"</span><span class="atn"> readonly&gt;</span></span></span></span>
+<span class="line"><span class="number" data-num="4."></span><span class="line-2">    <span class="tag">&lt;input<span class="atn"> type=</span><span class="atv">"submit"</span><span class="atn"> value=</span><span class="atv">"Buscar"</span>&gt;</span></span></span>
+<span class="line"><span class="number" data-num="5."></span><span class="line-1">  <span class="tag">&lt;/p&gt;</span></span></span>
+<span class="line"><span class="number" data-num="6."></span><span class="line-2"><span class="tag">&lt;/form&gt;</span></span></span>
+</code></pre>
+<div class="code-view">
+  <div class="code-view-lines">
+<form action="../../form-result.php" method="post" target="_blank">
+  <p>
+    Búsqueda de usuarios: <input type="search" name="busquedausuarios" value="samwise4855" readonly="readonly">
+    <input type="submit" value="Buscar">
+  </p>
+</form>
+    <div class="clear-both"></div>
+  </div>
+</div>
+
+      </details>
+      <details class="attribute">
+        <summary>
+          <h4>required</h4>
+        </summary>
+        <p>Un valor booleano que indica si este control puede ser dejado
+ en blanco o no. Si este atributo tiene el valor "required" o la cadena 
+vacía (""), o si está siplemente presente, el usuario tendrá que 
+rellenar el control a fin de poder enviar el formulario.</p>
+        <p class="info"><span class="image"></span>Si un control con el atributo <code class="attribute">required</code>
+ presente es dejado en blanco, los navegadores que soporten este 
+mecanismo arrojarán un error previo al envío y cancelarán el proceso 
+inmediatamente.</p>
+        <p class="warning"><span class="image"></span>El soporte provisto por los navegadores para el atributo <code class="attribute">required</code> es incompleto. Los autores pueden tener que recurrir a programas para proveer esta funcionalidad consistentemente.</p>
+        <p class="code-view-title"><span>Ejemplo</span></p>
+
+<pre class="code-view"><code><span class="line"><span class="number" data-num="1."></span><span class="line-1"><span class="tag">&lt;form<span class="atn"> action=</span><span class="atv">"../../form-result.php"</span><span class="atn"> method=</span><span class="atv">"post"</span><span class="atn"> target=</span><span class="atv">"_blank"</span>&gt;</span></span></span>
+<span class="line"><span class="number" data-num="2."></span><span class="line-2">  <span class="tag">&lt;p&gt;</span></span></span>
+<span class="line"><span class="number" data-num="3."></span><span class="line-1">    Búsqueda de títulos: <span class="tag">&lt;input<span class="atn"> type=</span><span class="atv">"search"</span><span class="atn"> name=</span><span class="atv">"busquedatitulos"</span><span class="atn"> required&gt;</span></span></span></span>
+<span class="line"><span class="number" data-num="4."></span><span class="line-2">    <span class="tag">&lt;input<span class="atn"> type=</span><span class="atv">"submit"</span><span class="atn"> value=</span><span class="atv">"Buscar"</span>&gt;</span></span></span>
+<span class="line"><span class="number" data-num="5."></span><span class="line-1">  <span class="tag">&lt;/p&gt;</span></span></span>
+<span class="line"><span class="number" data-num="6."></span><span class="line-2"><span class="tag">&lt;/form&gt;</span></span></span>
+</code></pre>
+<div class="code-view">
+  <div class="code-view-lines">
+<form action="../../form-result.php" method="post" target="_blank">
+  <p>
+    Búsqueda de títulos: <input type="search" name="busquedatitulos" required="">
+    <input type="submit" value="Buscar">
+  </p>
+</form>
+    <div class="clear-both"></div>
+  </div>
+</div>
+
+      </details>
+      <details class="attribute">
+        <summary>
+          <h4>size</h4>
+        </summary>
+        <p>Un entero para ser usado como ancho del elemento, como un 
+número de caracteres que deberian ser visibles en el control 
+simultáneamente.</p>
+        <p class="info"><span class="image"></span>Como los caracteres 
+normalmente no tienen el mismo ancho, los navegadores pueden definir el 
+ancho de carácter de acuerdo a ciertos criterios (como ancho promedio o 
+máximo).</p>
+        <p class="code-view-title"><span>Ejemplo</span></p>
+
+<pre class="code-view"><code><span class="line"><span class="number" data-num="1."></span><span class="line-1"><span class="tag">&lt;form<span class="atn"> action=</span><span class="atv">"../../form-result.php"</span><span class="atn"> method=</span><span class="atv">"post"</span><span class="atn"> target=</span><span class="atv">"_blank"</span>&gt;</span></span></span>
+<span class="line"><span class="number" data-num="2."></span><span class="line-2">  <span class="tag">&lt;p&gt;</span></span></span>
+<span class="line"><span class="number" data-num="3."></span><span class="line-1">    Buscar por codigo: <span class="tag">&lt;input<span class="atn"> type=</span><span class="atv">"search"</span><span class="atn"> name=</span><span class="atv">"buscarporcodigo"</span><span class="atn"> size=</span><span class="atv">"4"</span>&gt;</span></span></span>
+<span class="line"><span class="number" data-num="4."></span><span class="line-2">    <span class="tag">&lt;input<span class="atn"> type=</span><span class="atv">"submit"</span><span class="atn"> value=</span><span class="atv">"Buscar"</span>&gt;</span></span></span>
+<span class="line"><span class="number" data-num="5."></span><span class="line-1">  <span class="tag">&lt;/p&gt;</span></span></span>
+<span class="line"><span class="number" data-num="6."></span><span class="line-2"><span class="tag">&lt;/form&gt;</span></span></span>
+</code></pre>
+<div class="code-view">
+  <div class="code-view-lines">
+<form action="../../form-result.php" method="post" target="_blank">
+  <p>
+    Buscar por codigo: <input type="search" name="buscarporcodigo" size="4">
+    <input type="submit" value="Buscar">
+  </p>
+</form>
+    <div class="clear-both"></div>
+  </div>
+</div>
+
+      </details>
+      <details class="attribute">
+        <summary>
+          <h4>type</h4>
+        </summary>
+
+        <p>Un valor que indica el tipo de campo que representa este 
+elemento. Existen veintidós valores posibles (insensibles a 
+mayúsculas/minúsculas):</p>
+        <ul>
+          <li><a href="https://www.htmlquick.com/es/reference/tags/input-hidden.html">hidden</a>: un control oculto utilizado para enviar información al servidor, típicamente manejado por programas.</li>
+          <li><a href="https://www.htmlquick.com/es/reference/tags/input-text.html">text</a>: un control usado para la entrada de una sola línea de texto.</li>
+          <li><a href="https://www.htmlquick.com/es/reference/tags/input-search.html">search</a>: igaul a <a href="https://www.htmlquick.com/es/reference/tags/input-text.html">text</a> pero con fines de búsqueda.</li>
+          <li><a href="https://www.htmlquick.com/es/reference/tags/input-tel.html">tel</a>: un control usado para proveer un número de teléfono.</li>
+          <li><a href="https://www.htmlquick.com/es/reference/tags/input-url.html">url</a>: una caja de texto usada para el ingreso de un único <a href="https://www.htmlquick.com/es/reference/uri-url.html"><abbr title="Localizador Uniforme de Recursos">URL</abbr> absoluto</a>.</li>
+          <li><a href="https://www.htmlquick.com/es/reference/tags/input-email.html">email</a>: un control diseñado para editar una o más direcciones de e-mail.</li>
+          <li><a href="https://www.htmlquick.com/es/reference/tags/input-password.html">password</a>: una caja de texto para la edición de contraseñas, donde los caracteres son representados por puntos.</li>
+          <li><a href="https://www.htmlquick.com/es/reference/tags/input-date.html">date</a>: un control para ingresar una fecha específica.</li>
+          <li><a href="https://www.htmlquick.com/es/reference/tags/input-month.html">month</a>: un control para ingresar un mes específico.</li>
+          <li><a href="https://www.htmlquick.com/es/reference/tags/input-week.html">week</a>: un control para ingresar una semana específica.</li>
+          <li><a href="https://www.htmlquick.com/es/reference/tags/input-time.html">time</a>: un control para ingresar una hora específica.</li>
+          <li><a href="https://www.htmlquick.com/es/reference/tags/input-datetime-local.html">datetime-local</a>: un control para ingresar una fecha y hora local específica.</li>
+          <li><a href="https://www.htmlquick.com/es/reference/tags/input-number.html">number</a>: un control para ingresar un número.</li>
+          <li><a href="https://www.htmlquick.com/es/reference/tags/input-range.html">range</a>: un control para ingresar uno o dos números dentro de un rango.</li>
+          <li><a href="https://www.htmlquick.com/es/reference/tags/input-color.html">color</a>: un control para ingresar un color.</li>
+          <li><a href="https://www.htmlquick.com/es/reference/tags/input-checkbox.html">checkbox</a>: un control para ingresar un valor booleano (verdadero/falso).</li>
+          <li><a href="https://www.htmlquick.com/es/reference/tags/input-radio.html">radio</a>: un control para elegir una única opción entre varias.</li>
+          <li><a href="https://www.htmlquick.com/es/reference/tags/input-file.html">file</a>: un control usado para subir archivos al servidor.</li>
+          <li><a href="https://www.htmlquick.com/es/reference/tags/input-submit.html">submit</a>: un botón usado para enviar el formulario.</li>
+          <li><a href="https://www.htmlquick.com/es/reference/tags/input-image.html">image</a>: igual a <a href="https://www.htmlquick.com/es/reference/tags/input-submit.html">submit</a> pero con la habilidad de verse como una imagen en lugar de usar la apariencia predeterminada de los botones.</li>
+          <li><a href="https://www.htmlquick.com/es/reference/tags/input-reset.html">reset</a>: un botón usado para reiniciar los controles del formulario a sus valores iniciales.</li>
+          <li><a href="https://www.htmlquick.com/es/reference/tags/input-button.html">button</a>: un botón sin una acción predeterminada asociada.</li>
+        </ul>
+        <p>Cuando este atributo está ausente, el elemento se comporta como si tuviera el valor "text".</p>
+
+        <p class="code-view-title"><span>Ejemplo</span></p>
+
+<pre class="code-view"><code><span class="line"><span class="number" data-num="1."></span><span class="line-1"><span class="tag">&lt;input<span class="atn"> type=</span><span class="atv">"search"</span><span class="atn"> name=</span><span class="atv">"searchstring"</span>&gt;</span></span></span>
+</code></pre>
+
+      </details>
+      <details class="attribute">
+        <summary>
+          <h4>value</h4>
+        </summary>
+        <p>Un valor inicial para el control, que será establecido cuando la página se cargue y cuando el <a href="https://www.htmlquick.com/es/reference/tags/input-reset.html">botón de reinicio</a> sea presionado.</p>
+        <p class="code-view-title"><span>Ejemplo</span></p>
+
+<pre class="code-view"><code><span class="line"><span class="number" data-num="1."></span><span class="line-1"><span class="tag">&lt;form<span class="atn"> action=</span><span class="atv">"../../form-result.php"</span><span class="atn"> method=</span><span class="atv">"post"</span><span class="atn"> target=</span><span class="atv">"_blank"</span>&gt;</span></span></span>
+<span class="line"><span class="number" data-num="2."></span><span class="line-2">  <span class="tag">&lt;p&gt;</span>Búsqueda de títulos: <span class="tag">&lt;input<span class="atn"> type=</span><span class="atv">"search"</span><span class="atn"> name=</span><span class="atv">"busquedatitulos"</span><span class="atn"> value=</span><span class="atv">"Un hombre sin honor"</span>&gt;</span><span class="tag">&lt;/p&gt;</span></span></span>
+<span class="line"><span class="number" data-num="3."></span><span class="line-1">  <span class="tag">&lt;p&gt;</span></span></span>
+<span class="line"><span class="number" data-num="4."></span><span class="line-2">    <span class="tag">&lt;input<span class="atn"> type=</span><span class="atv">"submit"</span><span class="atn"> value=</span><span class="atv">"Buscar"</span>&gt;</span></span></span>
+<span class="line"><span class="number" data-num="5."></span><span class="line-1">    <span class="tag">&lt;input<span class="atn"> type=</span><span class="atv">"reset"</span><span class="atn"> value=</span><span class="atv">"Restaurar formulario"</span>&gt;</span></span></span>
+<span class="line"><span class="number" data-num="6."></span><span class="line-2">  <span class="tag">&lt;p&gt;</span></span></span>
+<span class="line"><span class="number" data-num="7."></span><span class="line-1"><span class="tag">&lt;/form&gt;</span></span></span>
+</code></pre>
+<div class="code-view">
+  <div class="code-view-lines">
+<form action="../../form-result.php" method="post" target="_blank">
+  <p>Búsqueda de títulos: <input type="search" name="busquedatitulos" value="Un hombre sin honor"></p>
+  <p>
+    <input type="submit" value="Buscar">
+    <input type="reset" value="Restaurar formulario">
+  </p><p>
+</p></form>
+    <div class="clear-both"></div>
+  </div>
+</div>
+
+      </details>
+    </section>
+    <section>
+  <h3 id="global-attributes">Atributos globales</h3>
+  <p>Para más información acerca de los atributos globales refiérete a esta <a href="https://www.htmlquick.com/es/reference/attributes.html">lista de atributos gloables en <abbr title="Lenguaje de marcas de hypertexto">HTML</abbr>5</a>.</p>
+</section>
+  </section>
+  <section id="events">
+    <h2>Eventos</h2>
+    <section>
+  <h3 id="global-events">Eventos globales</h3>
+  <p>Para más información acerca de los eventos globales refiérete a esta <a href="https://www.htmlquick.com/es/reference/events.html">lista de eventos globales en <abbr title="Lenguaje de marcas de hypertexto">HTML</abbr>5</a>.</p>
+</section>
+  </section>
+</article>
+      <!-- script data-ad-client="ca-pub-3474820532303962" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script -->
+      </main>
+      <footer id="footer">
+        <div id="footer-line"></div>
+        <div id="footer-content">
+          <div id="footer-column-1">
+            <h1>Tutoriales</h1>
+            <ul>
+              <li><a href="https://www.htmlquick.com/es/tutorials/how-to-begin.html"><span>¿Cómo empezar?</span></a>
+              </li><li><a href="https://www.htmlquick.com/es/tutorials/tags-attributes.html"><span>Etiquetas y atributos <abbr title="Lenguaje de marcas de hypertexto">HTML</abbr></span></a>
+              </li><li><a href="https://www.htmlquick.com/es/tutorials/document-structure.html"><span>La estructura del documento</span></a>
+              </li><li><a href="https://www.htmlquick.com/es/tutorials/content-grouping-and-structure.html"><span>Estructura del contenido</span></a>
+              </li><li><a href="https://www.htmlquick.com/es/tutorials/links.html"><span>Vínculos en <abbr title="Lenguaje de marcas de hypertexto">HTML</abbr></span></a>
+              </li><li><a href="https://www.htmlquick.com/es/tutorials/organizing-website.html"><span>Organizando un sitio web</span></a>
+              </li><li><a href="https://www.htmlquick.com/es/tutorials/tables.html"><span>Tablas en <abbr title="Lenguaje de marcas de hypertexto">HTML</abbr></span></a>
+              </li><li><a href="https://www.htmlquick.com/es/tutorials/forms.html"><span>Formularios básicos en <abbr title="Lenguaje de marcas de hypertexto">HTML</abbr></span></a>
+              </li><li><a href="https://www.htmlquick.com/es/tutorials/css.html"><span>Hojas de estilo en cascada (CSS)</span></a>
+            </li></ul>
+          </div><div id="footer-column-2">
+            <h1>Referencia</h1>
+            <ul>
+              <li><a href="https://www.htmlquick.com/es/reference/tags.html"><span>Elementos de <abbr title="Lenguaje de marcas de hypertexto">HTML</abbr></span></a>
+              </li><li><a href="https://www.htmlquick.com/es/reference/character-encoding.html"><span>Codificación de caracteres</span></a>
+              </li><li><a href="https://www.htmlquick.com/es/reference/character-entity-reference.html"><span>Referencia de caracteres</span></a>
+              </li><li><a href="https://www.htmlquick.com/es/reference/events.html"><span>Eventos globales</span></a>
+              </li><li><a href="https://www.htmlquick.com/es/reference/attributes.html"><span>Atributos globales</span></a>
+              </li><li><a href="https://www.htmlquick.com/es/reference/color-codes.html"><span>Códigos de color</span></a>
+              </li><li><a href="https://www.htmlquick.com/es/reference/language-codes.html"><span>Etiquetas de lenguaje</span></a>
+              </li><li><a href="https://www.htmlquick.com/es/reference/mime-types.html"><span>Tipos de medios de Internet</span></a>
+              </li><li><a href="https://www.htmlquick.com/es/reference/uri-url.html"><span><abbr title="Identificador de recursos uniforme">URIs</abbr> y <abbr title="Localizador de recursos uniforme">URLs</abbr></span></a>
+            </li></ul>
+          </div><div id="footer-column-3">
+            <h1>Más</h1>
+            <ul>
+              <li><a href="https://www.htmlquick.com/es/contactus.php"><span>Contáctame</span></a>
+              </li><li><a href="https://www.htmlquick.com/es/beyond-html.html"><span>Más allá de <abbr title="Lenguaje de marcas de hypertexto">HTML</abbr></span></a>
+              </li><li><a href="https://www.htmlquick.com/es/tools-resources.html"><span>Herramientas y recursos</span></a>
+              </li><li><a href="https://www.htmlquick.com/es/webmaster.html"><span>Acerca de mí</span></a>
+            </li></ul>
+            <h1>Ayúdame</h1>
+            <ul>
+              <li><a href="https://www.htmlquick.com/es/contactus.php"><span>Informa errores</span></a>
+              </li><li><a href="https://www.htmlquick.com/es/donate.html"><span>Dona</span></a>
+            </li></ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script async="" src="Elemento%20input%20(type=search)_files/analytics.js"></script><script type="text/javascript" src="Elemento%20input%20(type=search)_files/default.js"></script>
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-420622-2', 'auto');
+      ga('send', 'pageview');
+    </script>
+
+  
+
+</body></html>
