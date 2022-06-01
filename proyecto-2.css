@@ -41,12 +41,37 @@ body {
 }
 
 .logo-nav img:hover {
-    transform: scale(1.1);
+    animation: logomoov 4s;
 }
 
-.logo-nav img {
-    transition: all 1.5s;
+@keyframes logomoov {
+
+    0% {
+        border: 2px solid grey;
+    }
+
+    25% {
+        
+        border: 2px solid blue;
+        
+    }
+
+    50% {
+        border-radius: 50%;
+        border: 2px solid violet;
+        
+      
+    }
+
+    100% {
+        
+        border: 2px solid blueviolet;
+    }
+
+    
+    
 }
+
 
 
 .nav-container {
@@ -166,6 +191,7 @@ a {
     background-image: url(./images/Cervezas.jpeg);
     background-repeat: no-repeat;
     display: flex;
+    transition: all 2s;
     
 }
 
@@ -173,34 +199,51 @@ a {
     width: 300px;
     background-image: url(./images/vinos.jpeg);
     background-repeat: no-repeat;
+    transition: all 2s;
 }
 
 .product-image3 {
     width: 300px;
     background-image: url(./images/whiskys.jpg);
     background-repeat: no-repeat;
+    transition: all 2s;
 }
 
 .product-image4 {
     width: 300px;
     background-image: url(./images/tragos.jpg);
     background-repeat: no-repeat;
+    transition: all 2s;
 }
+
 
 .product-image5 {
     width: 300px;
-    background-image: url(./images/sin-alcohol.jpeg);
-    background-repeat: no-repeat;
-}
-
-.product-image6 {
-    width: 300px;
     background-image: url(./images/bebidas\ espirituosas.jpg);
     background-repeat: no-repeat;
+    transition: all 2s;
 }
 
 
+.card:hover {
+    transform: scale(1.1);
+}
 
+.product-image2:hover {
+    transform: scale(1.1);
+}
+
+.product-image3:hover {
+    transform: scale(1.1);
+}
+
+.product-image4:hover {
+    transform: scale(1.1);
+}
+
+.product-image5:hover {
+    transform: scale(1.1);
+}
 /* Fin del Main */
 
 
