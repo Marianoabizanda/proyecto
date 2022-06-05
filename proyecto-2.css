@@ -72,15 +72,6 @@ body {
 
 
 
-/* .nav-container {
-    background-color: rgb(36, 30, 30) ;
-    padding: 10px;
-    display: flex;
-    justify-content: space-around;
-    
-} */
-
-
 .container-fluid {
     background-color: blueviolet;
     
@@ -93,26 +84,23 @@ body {
 
 
 
-.menu-nav {
-    
-    background-color: rgb(36, 30, 30);
-    width: 800px;
-    display: flex;
-    justify-content: space-around;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    .menu-nav {
+        
+        background-color: rgb(36, 30, 30);
+        width: 800px;
+        display: flex;
+        justify-content: space-around;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
-}
-
-
-a {
-    color: white;
-}
+    }
 
 
-.redes {
-    width: 30px;
-}
+    a {
+        color: white;
+    }
 
+
+   
 
 /* Fin del Nav */
  
@@ -193,57 +181,6 @@ a {
 }
 
 
-
-
-/* .product-image1 {
-    border: 1px solid black;
-    height: 185px;
-    cursor:pointer;
-    background-image: url(./images/Cervezas.jpeg);
-    background-repeat: no-repeat;
-    display: flex;
-    transition: all 0.5s;
-    
-}
-
-.product-image2 {
-    border: 1px solid black;
-    height: 185px;
-    cursor:pointer;
-    background-image: url(./images/vinos.jpeg);
-    background-repeat: no-repeat;
-    transition: all 0.5s;
-}
-
-.product-image3 {
-    border: 1px solid black;
-    height: 185px;
-    cursor:pointer;
-    background-image: url(./images/whiskys.jpg);
-    background-repeat: no-repeat;
-    transition: all 0.5s;
-}
-
-.product-image4 {
-    border: 1px solid black;
-    height: 185px;
-    cursor:pointer;
-    background-image: url(./images/tragos.jpg);
-    background-repeat: no-repeat;
-    transition: all 0.5s;
-}
-
-
-.product-image5 {
-    border: 1px solid black;
-    height: 185px;
-    cursor:pointer;
-    background-image: url(./images/bebidas\ espirituosas.jpg);
-    background-repeat: no-repeat;
-    transition: all 0.5s;
-}
-
-*/
 .card:hover {
     transform: scale(1.1);
 } 
@@ -311,6 +248,10 @@ a {
    
 }
 
+.redes {
+    width: 30px;
+}
+
 /* Fin del footer */
 
 
@@ -320,7 +261,7 @@ a {
 
 
 
-/*HTML Seccion Productos */
+/*HTML Inicio Seccion Productos */
 
 
 
@@ -367,4 +308,41 @@ a {
     margin-bottom: 20px;
     cursor: pointer;
 }
+
+
+/*HTML Fin Seccion Productos */
+
+
+/*HTML Inicio Seccion Contacto */
+
+
+.contact_form{
+    background-color: rgb(161, 155, 159);
+    width: 450px;
+    border: 2px solid black;
+    margin: auto;
+    margin-bottom: 50px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+
+
+h2{
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+
+input{
+    width: 300px;
+    height: 35px;
+}
+
+textarea{
+    width: 300px;
+    height: 100px;
+}
+
 
