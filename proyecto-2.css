@@ -83,11 +83,11 @@ body {
   margin: 30px 5px;    
   display: grid; 
   grid-template-columns: 1fr 1fr 1fr; 
-  grid-template-rows: 1fr 1fr; 
+  grid-template-rows: 1fr 1fr ; 
   gap: 5px 5px; 
   grid-template-areas: 
-    "product product aside"
-    "product product aside"
+    "product product aside "
+   "product product aside"
     "map map map"; 
   
 }
@@ -229,7 +229,6 @@ body {
 
 
 .footer-row {  
-    border: 1px solid red;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -254,21 +253,89 @@ body {
        grid-area: column3; 
        text-align: center;
  }
-  
 
+/* Fin del footer */
+
+
+
+/* Media Queries */
+
+/* Mobile */
 @media (max-width:600px){
-
-    .footer-row { grid-template-areas:
-      "column1 column3 column3"
-      "column1 column2 column2";
+    
+    .main-container{
+      grid-template-areas: 
+      "product product"
+      "map map"; 
+      display: inline;
+      
+    
     }
+
     .aside{
         display: none;
     }
 
+    .card-1, .card-2, .card-3, .card-4, .card-5{
+        width: 210px !important;
+        height: 240px !important;
+    }
+
+   
+
+}
+  
+/* Tablet */
+@media (max-width:768px){
+    
+    .main-container{
+        
+        grid-template-columns: 1fr 1fr 1fr;
+       grid-template-rows: 1fr;
+       grid-template-areas: 
+      "aside aside aside"
+      "product product product"
+      "map map map"; 
+    }
+    
+
+    .footer-row { 
+        grid-template-areas:
+      "column1 column3 column3"
+      "column1 column2 column2";
+    }
+
+   
+    .aside{
+        height: 400px !important;
+    }    
+
+    .card-1, .card-2, .card-3, .card-4, .card-5{
+        width: 210px !important;
+        height: 240px !important;
+        
+    }
+
+   
+     
 }
 
-/* Fin del footer */
+
+
+ /* Desktop */
+/* @media (min-width:900px){
+
+    .main-container{
+        border: 1px solid blue;
+        grid-template-areas: 
+      "product product aside"
+      "product product aside"
+      "map map map"; 
+    }
+
+ }
+
+ */
 
 
 
