@@ -22,7 +22,9 @@ body {
     font-family: sans-serif;
     background-color: rgb(36, 30, 30);
     color: grey;
-    display: flex;   
+    display: flex; 
+    justify-content: center;
+      
    
 }
 
@@ -67,11 +69,21 @@ body {
         color: white;
     }
 
+    #mensaje{
+        font-size: 20px;
+        
+    }
 
    
 
 /* Fin del Nav */
  
+
+
+
+
+
+
 
 
 
@@ -125,11 +137,17 @@ body {
 }
 
 
-.aside,.image-red {
+.aside {
     
    display: flex;
-   justify-content: center; 
+   justify-content: center;
+    
   
+}
+
+#img-promo{
+    width: 80%;
+    height: 15%;
 }
 
 
@@ -166,6 +184,9 @@ body {
 
 
 
+
+
+
 /* Inicio de Footer */
 
 .footer-container {
@@ -180,23 +201,6 @@ body {
 
 }
 
-/* .footer-column {
-    width: 33.33%;
-}
-
-
-.footer-column2 {
-    display:flex;
-    justify-content: flex-end;
-    align-items: center; 
-}
-
-.footer-column3 {
-
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-} */
 
 .footer-bottom {
 
@@ -258,10 +262,22 @@ body {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 /* Media Queries */
 
-/* Mobile */
-@media (max-width:600px){
+
+@media (max-width:768px){
     
     .main-container{
       grid-template-areas: 
@@ -281,16 +297,16 @@ body {
         height: 240px !important;
     }
 
-   
+  
 
 }
   
-/* Tablet */
-@media (max-width:768px){
+
+@media (max-width:960px){
     
     .main-container{
         
-        grid-template-columns: 1fr 1fr 1fr;
+       grid-template-columns: 1fr 1fr 1fr;
        grid-template-rows: 1fr;
        grid-template-areas: 
       "aside aside aside"
@@ -306,36 +322,19 @@ body {
     }
 
    
-    .aside{
-        height: 400px !important;
-    }    
-
+   
     .card-1, .card-2, .card-3, .card-4, .card-5{
         width: 210px !important;
         height: 240px !important;
         
     }
 
-   
+    #img-promo{
+        width: 30% !important;
+        height: 25% !important;
+    }
      
 }
-
-
-
- /* Desktop */
-/* @media (min-width:900px){
-
-    .main-container{
-        border: 1px solid blue;
-        grid-template-areas: 
-      "product product aside"
-      "product product aside"
-      "map map map"; 
-    }
-
- }
-
- */
 
 
 
