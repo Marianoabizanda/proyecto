@@ -1,0 +1,67 @@
+@import '../base/extends';
+@import '../base/mixins';
+
+
+
+.footer-container {
+    
+    background-color: nth($colores, 4);
+    color: nth($colores, 7);
+    padding: 20px 20px;
+    
+
+   
+    .footer-row {  
+        display: flex;    
+        align-items: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "column1 column2 column3"
+          "column1 column2 column3";
+
+          .column1 { 
+            grid-area: column1;
+            text-align: start;
+            img{
+                @include tamaño (256px, 188px);
+            }
+            
+        }
+        
+        .column2 { 
+            grid-area: column2;
+            text-align: center;
+      
+        }
+        
+        .column3 {
+             grid-area: column3; 
+             text-align: center;
+       }
+       
+      }
+      .footer-redes {
+
+        @extend %flex-center;
+        padding: 10px;
+
+        .redes {
+            width: 30px;
+        }
+    }
+    
+     .copyright {
+    
+        @extend %flex-center;
+        background-color: nth($colores, 8);
+        margin: 20px;
+        color: nth($colores,9);
+        font-size: 15px;
+       
+    }
+    
+}

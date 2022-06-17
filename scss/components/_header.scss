@@ -1,0 +1,49 @@
+@import '../base/listas';
+@import '../base/extends';
+@import '../base/mixins';
+
+
+.header-container{
+    color: nth($colores, 3);
+    .header-nav {
+     font-family: sans-serif;
+     background-color: nth($colores, 4);
+     color: nth($colores, 5);
+     @extend %flex-center;
+     #mensaje{
+        font-size: 20px;
+        
+    }
+ 
+}
+
+ .logo-nav:hover{
+    transform: scale(1.1);
+}
+ .logo-nav {
+     @extend %flex-center;
+     background-color: nth($colores, 4);
+     cursor: pointer;   
+     transition: all 2s;
+     padding-top: 15px;
+     padding-bottom: 15px;
+     img{
+        @include tamaño (256px, 188px);
+     }
+     
+
+}   
+ 
+
+ 
+ .container-fluid {
+     background-color: nth($colores, 6);
+     #navbarNav {
+         justify-content: space-around;
+         font-size: 20px;    
+     }
+     
+ }
+ 
+ }
+
