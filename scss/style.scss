@@ -11,9 +11,7 @@
 }
 
 body {
-    background-image: linear-gradient(rgb(101, 76, 160), rgba(179, 160, 160, 0.5)), url(../images/AnyConv.com__ladrillo\(1\).webp);
-    
-    
+    background-image: linear-gradient(rgb(141, 125, 179), rgba(233, 252, 236, 0.5)), url(../images/AnyConv.com__ladrillo\(1\).webp);
 }
 
  /* Inicio del Header y nav  */
@@ -39,21 +37,62 @@ body {
       display: inline;
       
       .aside{
+        
         display: none;
     }
+    .card-1, .card-2, .card-3, .card-4, .card-5{
+        width: 40% !important;
+        height: 50% !important;
     }
+    }
+ 
+
+    .column1{
+       width: 80%;
+    }
+    .column2{
+        font-size: 70%;
+    }
+    .column3{
+        font-size: 80%;
+    }
+
+    // Seccion productos
+
 
     
+    .banner{
+        .col-12{
+            margin-top: 10px;
+            .list-banner{
+                font-size: 90%;
+                width: 100%;
+            }
+        }
 
-    .card-1, .card-2, .card-3, .card-4, .card-5{
-        width: 210px !important;
-        height: 240px !important;
     }
 
-  
+    .contenedor-products{
 
+        .card{
+            width: 40% !important;
+            #img-card{
+                width: 100% !important;
+                
+            }
+            .text-info{
+                
+                #info{
+                   font-size: 100%;
+                }
+
+            }
+        }
+
+    }
 }
   
+
 @media (max-width:960px){
     
     .main-container{
@@ -85,7 +124,7 @@ body {
         width: 30% !important;
         height: 25% !important;
     }
-     
+
 }
 
 

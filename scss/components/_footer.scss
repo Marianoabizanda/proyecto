@@ -23,7 +23,7 @@
           "column1 column2 column3"
           "column1 column2 column3";
 
-          .column1 { 
+        .column1 { 
             grid-area: column1;
             text-align: start;
             img{
@@ -41,6 +41,11 @@
         .column3 {
              grid-area: column3; 
              text-align: center;
+             .list-footer{
+                 color: nth($colores, 7);
+            }
+             
+                
        }
        
       }

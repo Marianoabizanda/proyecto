@@ -8,25 +8,22 @@
     .header-nav {
      font-family: sans-serif;
      background-color: nth($colores, 4);
-     color: nth($colores, 5);
      @extend %flex-center;
      #mensaje{
         font-size: 20px;
+        color: nth($colores, 5);
         
     }
  
 }
 
- .logo-nav:hover{
-    transform: scale(1.1);
-}
- .logo-nav {
+
+  .logo-nav {
      @extend %flex-center;
+     height: 280px;
+     align-items: center;
      background-color: nth($colores, 4);
      cursor: pointer;   
-     transition: all 2s;
-     padding-top: 15px;
-     padding-bottom: 15px;
      img{
         @include tamaño (256px, 188px);
      }
@@ -35,9 +32,11 @@
 }   
  
 
- 
- .container-fluid {
+  .container-fluid {
      background-color: nth($colores, 6);
+     .nav-link{
+         color: nth($colores, 7);
+     }
      #navbarNav {
          justify-content: space-around;
          font-size: 20px;    
