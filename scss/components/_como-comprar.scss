@@ -1,0 +1,36 @@
+@import '../base/extends';
+@import '../base/listas';
+
+
+
+.container-compras{
+    width: 100%;
+
+    .title-compras{
+       display: flex;
+       width: 100%;
+       h2{ 
+        @extend %flex-center; 
+        font-size: 50px;
+       }
+    }
+
+    .compras{
+        display: flex;
+        width: 100%;
+        padding: 10px;
+        font-size: 20px;
+        margin-bottom: 50px;
+        h2{
+            color: nth($colores, 12);
+        }
+    }
+
+    .text-compras{
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size: 18px;
+        width: 100%;
+        padding: 10px 10px;
+        margin-bottom: 30px;
+    }
+}

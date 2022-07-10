@@ -1,0 +1,188 @@
+@import '../base/listas';
+@import '../base/extends';
+@import '../base/variables';
+@import '../base/mixins';
+
+
+@media (max-width:768px){
+    
+    .header-container{
+        .mensaje-container{
+            #mensaje{
+                font-size: 16px !important;
+            }
+        }
+    }
+    
+    .main-container{
+       display: inline;
+
+       .carousel-container{
+   
+      }
+      .carousel{
+        
+        img{
+         width: 350px !important;
+         height: 200px !important;
+        }
+            
+      }
+      
+      .promos{
+        display: none !important;
+    }
+    .card-1, .card-2, .card-3, .card-4, .card-5{
+        width: 40% !important;
+        height: 50% !important;
+    }
+    }
+ 
+    // footer
+    .column1{
+       width: 100%;
+       h4{
+           font-size: 100%;
+       }
+ 
+    }
+    .column2{
+        font-size: 70%;
+    }
+    .column3{
+        font-size: 80%;
+    }
+
+    // Seccion productos
+   
+    .banner{
+        margin: 1px;
+        width: 18% !important;
+        
+        .btn{
+           width: 100%;
+           padding: 7px 1px;
+        
+        a{
+            font-size: 80%;
+            display: flex;
+            justify-content: center;
+            
+        }
+    }
+    }
+
+    .contenedor-products{
+        width: 73% !important;
+        .card{
+            width: 44% !important;
+            #img-card{
+                width: 100% !important;   
+            }
+            .text-info{
+                #info{
+                   font-size: 100%;
+                }
+
+            }
+        }
+
+    }
+
+    // Seccion contacto
+    .contact-form{
+       
+    width: 330px !important;
+    margin: auto;
+    margin-bottom: 50px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    }
+    h2{
+        margin: 0;
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    input{
+        width: 250px !important;
+        height: 30px !important;
+    }
+    textarea{
+        width: 250px !important ;
+        height: 110px !important;
+    }
+
+    // Seccion Como comprar
+
+    .container-compras{
+    width: 100%;
+
+    .title-compras{
+       display: flex;
+       width: 100%;
+       h2{ 
+        @extend %flex-center; 
+        font-size: 40px;
+       }
+    }
+
+    .compras{
+        display: flex;
+        width: 100%;
+        padding: 5px;
+        .pasos{
+            width: 25%;
+            .img-compra{
+                width: 91%;
+            }
+            h2{
+                font-size: 91%;
+            }
+            p{
+                font-size: 91%;
+            }
+        }
+    }
+
+    .text-compras{
+        font-size: 18px;
+        width: 100%;
+    }
+}
+    
+}
+  
+
+@media (max-width:960px){
+    
+    .main-container{
+       grid-template-areas: 
+       "carousel carousel carousel"
+       "title title title"
+       "product product product"
+       "promos promos promos"
+       "map map map"; 
+    }
+    
+    .footer-container{ 
+    .footer-row { 
+        grid-template-areas:
+      "column1 column3 column3"
+      "column1 column2 column2";
+    }
+}
+   
+   
+    .card-1, .card-2, .card-3, .card-4, .card-5{
+        width: 210px !important;
+        height: 240px !important;
+        
+    }
+
+    #img-promo{
+        width: 30% !important;
+        height: 25% !important;
+    }
+
+}

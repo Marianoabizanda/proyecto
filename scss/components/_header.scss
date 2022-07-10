@@ -5,7 +5,7 @@
 
 .header-container{
     color: nth($colores, 3);
-    .header-nav {
+    .mensaje-container {
      font-family: sans-serif;
      background-color: nth($colores, 4);
      @extend %flex-center;
@@ -22,7 +22,7 @@
      @extend %flex-center;
      height: 280px;
      align-items: center;
-     background-color: nth($colores, 4);
+     background-image: url(..//..//images/wine-6878013__340.webp);
      cursor: pointer;   
      img{
         @include tamaño (256px, 188px);

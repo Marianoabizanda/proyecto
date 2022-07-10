@@ -7,11 +7,10 @@
 * {
     margin: 0;
     padding: 0;
-
 }
 
 body {
-    background-image: linear-gradient(rgb(141, 125, 179), rgba(233, 252, 236, 0.5)), url(../images/AnyConv.com__ladrillo\(1\).webp);
+    background-image: linear-gradient(rgb(250, 251, 255), rgba(219, 233, 236, 0.5)), url(../images/AnyConv.com__ladrillo\(1\).webp);
 }
 
  /* Inicio del Header y nav  */
@@ -28,106 +27,8 @@ body {
  @import 'components/footer';
 
 
-@media (max-width:768px){
-    
-    .main-container{
-      grid-template-areas: 
-      "product product"
-      "map map"; 
-      display: inline;
-      
-      .aside{
-        
-        display: none;
-    }
-    .card-1, .card-2, .card-3, .card-4, .card-5{
-        width: 40% !important;
-        height: 50% !important;
-    }
-    }
- 
-
-    .column1{
-       width: 80%;
-    }
-    .column2{
-        font-size: 70%;
-    }
-    .column3{
-        font-size: 80%;
-    }
-
-    // Seccion productos
-
-
-    
-    .banner{
-        .col-12{
-            margin-top: 10px;
-            .list-banner{
-                font-size: 90%;
-                width: 100%;
-            }
-        }
-
-    }
-
-    .contenedor-products{
-
-        .card{
-            width: 40% !important;
-            #img-card{
-                width: 100% !important;
-                
-            }
-            .text-info{
-                
-                #info{
-                   font-size: 100%;
-                }
-
-            }
-        }
-
-    }
-}
-  
-
-@media (max-width:960px){
-    
-    .main-container{
-        
-       grid-template-columns: 1fr 1fr 1fr;
-       grid-template-rows: 1fr;
-       grid-template-areas: 
-      "aside aside aside"
-      "product product product"
-      "map map map"; 
-    }
-    
-    .footer-container{ 
-    .footer-row { 
-        grid-template-areas:
-      "column1 column3 column3"
-      "column1 column2 column2";
-    }
-}
-   
-   
-    .card-1, .card-2, .card-3, .card-4, .card-5{
-        width: 210px !important;
-        height: 240px !important;
-        
-    }
-
-    #img-promo{
-        width: 30% !important;
-        height: 25% !important;
-    }
-
-}
-
-
-@import './components/seccion-productos';
-@import './components/seccion-contacto';
-@import './components/seccion-quienes';
+ @import './components/seccion-productos';
+ @import './components/seccion-contacto';
+ @import './components/como-comprar';
+ @import './components/seccion-quienes';
+ @import './components/medias';

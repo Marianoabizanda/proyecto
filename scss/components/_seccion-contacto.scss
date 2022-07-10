@@ -1,8 +1,11 @@
 @import '../base/mixins';
+@import '../base/listas';
 /* HTML SECCION CONTACTO */
 
-.contact_form{
-    background-color: rgb(161, 155, 159);
+
+
+.contact-form{
+    background-color: nth($colores, 11);
     @include tamaño (400px, 600px);
     border: 2px solid black;
     margin: auto;

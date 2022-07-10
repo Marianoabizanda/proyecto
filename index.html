@@ -35,7 +35,7 @@
 
   <header class="header-container">
 
-    <div class="header-nav">
+    <div class="mensaje-container">
         <h2 id="mensaje">Envios a todo CABA y AMBA. ¡Recibi tu pedido en menos de 24 horas con nuestros envios Express!</h2>
     </div>
 
@@ -63,6 +63,9 @@
                 <a class="nav-link" href="./pages/contacto.html">Contacto</a>
               </li>
               <li class="nav-item">
+                <a class="nav-link" href="./pages/como-comprar.html">Cómo comprar</a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" href="./pages/quienes somos.html">Quienes somos</a>
               </li>
             </ul>
@@ -77,9 +80,46 @@
 
   <main class="main-container">
     
+    <section class="carousel-container">
+      <div class="carousel">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./images/1651000912slide1_cuzco.webp" alt="promocion">
+            </div>
+            <div class="carousel-item">
+              <img src="./images/banner-beneficios-mobile-spirits-18-11.webp" alt="promocion">
+            </div>
+            <div class="carousel-item">
+              <img src="./images/semana-malbec.webp" alt="promocion">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
     
-    <section class="product-container">
 
+    <section class="title-container">
+      <div>
+        <h1 class="title-principal">Productos</h1>
+      </div>
+    </section>
+
+
+    <section class="product-container">
       <div class="card card-1">
             <img src="./images/Cervezas.webp" class="card-img-top" alt="Cervezas">
           <div class="card-body">
@@ -114,35 +154,30 @@
             <a href="./pages/productos.html #Novedades" class="btn btn-primary ;">Novedades</a>
           </div>
       </div>   
-
     </section>           
         
         
         
-    <aside class="aside">
+    <div class="promos">
     
       <h2> Promos </h2>
-      <br>
-        <p> "¡Corre, que nuestra oferta vuela! Ven mañana a nuestra tienda y hazte tu servicio express favorito, ahorrándote un 30% del precio original en todas las marcas de cervezas y Vinos. Pide tu cita ahora y ¡aprovecha los #MartesDePromos en Distibuidora las notas!".</p>
-          <br><br>    
+      
+        <p> "Nuestras ofertas vuelan! Veni a nuestra sucursal  y conoce tu servicio express favorito, ahorrándote un 30% del precio original en todas las marcas de cervezas y Vinos. Tambien tenemos para vos los #MartesDePromos en Distibuidora las notas!".</p>
+            
       <img id="img-promo" src="./images/AnyConv.com__redbull.webp" alt="sponsor-redbull">
     
-    </aside>
+    </div>
 
 
     
     <section class="map">
     
        <div class="title-map">
-        
          <h3>Donde estamos</h3>
-        
       </div>
         
       <div class="map-image">
-
          <iframe class="iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.7349517169964!2d-58.41540048543438!3d-34.610863180457606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaf43d2735ab%3A0x1bb7317f5d6cfc74!2sAv.%20Rivadavia%2C%20C1203AAS%20CABA!5e0!3m2!1ses-419!2sar!4v1651459904679!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" alt="mapa"></iframe>
-
       </div>
         
     </section>
@@ -179,6 +214,7 @@
                 <li><a  class="list-footer" href="./index.html">Inicio</a></li>
                 <li><a  class="list-footer" href="./pages/productos.html">Productos<a></li>
                 <li><a  class="list-footer" href="./pages/contacto.html">Contacto</a></li>
+                <li><a  class="list-footer" href="./pages/como-comprar.html">Cómo comprar</a></li>
                 <li><a  class="list-footer" href="./pages/quienes somos.html">Quienes somos</a></li>
             </ul>
         </div>         
@@ -199,6 +235,7 @@
         <h2 class="copyright">Copyright - todos los derechos reservados.</h4>
 
 
+    
   </footer>
 
 

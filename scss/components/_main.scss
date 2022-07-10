@@ -6,12 +6,40 @@
     margin: 30px 5px;    
     display: grid; 
     grid-template-columns: 1fr 1fr 1fr; 
-    grid-template-rows: 1fr 1fr ; 
+    grid-template-rows: 1fr; 
     gap: 5px 5px; 
     grid-template-areas: 
-      "product product aside"
-      "product product aside"
+      "carousel carousel carousel"
+      "title title title"
+      "product product product"
+      "promos promos promos"
       "map map map"; 
+
+      .carousel-container{
+        grid-area: carousel;        
+        text-align: center;
+      
+      }
+      .carousel{
+        @extend %flex-center;
+        
+        img{
+         width: 650px;
+         height: 300px;
+        }
+            
+      }
+
+      .title-container{
+        grid-area: title; 
+        margin: 40px;      
+        .title-principal{
+          display: flex;
+          justify-content: center;
+        }
+
+      }
+
       .product-container {   
         grid-area: product;   
         display: flex;
@@ -24,17 +52,17 @@
        } 
        
        .card-1, .card-2, .card-3, .card-4, .card-5 {
-           width: 270px; 
-           height:265px ;
+           width: 260px; 
+           height:250px ;
            background: #000;
            transition: all 1.1s;
-           border: 1px solid $white;
+           border: 1px solid BLACK;
        }
        
        
       }
-      .aside { 
-        grid-area: aside; 
+      .promos { 
+        grid-area: promos; 
         border: 3px solid black;
         padding: 10px 10px;
         margin-top: 30px;
@@ -46,8 +74,8 @@
         }
         @extend %flex-center;
         #img-promo{
-           width: 80%;
-           height: 15%;
+           width: 30%;
+           height: 40%;
        }
        
       }
@@ -70,6 +98,5 @@
         }
         
     }
-  
-         
+    
   }
